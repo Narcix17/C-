@@ -22,24 +22,24 @@
 
         </Frame>
 
-        <Frame CornerRadius="0" BackgroundColor="{x:StaticResource DashboardBackground}"
+        <Frame CornerRadius="10" BackgroundColor="{x:StaticResource DashboardBackground} "
                Grid.Row="1" VerticalOptions="CenterAndExpand"
-               Margin="0,0,40,0"
+               HorizontalOptions="Center"
                >
             <VerticalStackLayout Spacing="25">
-                <Label Text="SIGN IN" FontSize="28" FontAttributes="Bold" />
+                <Label Text="SIGN IN" FontSize="28" FontAttributes="Bold" TextColor="{x:StaticResource Primary}"/>
 
                 <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
                     <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
                         <Image VerticalOptions="Center" Source="email.png" HeightRequest="25" WidthRequest="25" />
-                        <handless:BorderlessEntry VerticalOptions="Center" Placeholder="Email" Grid.Column="1" />
+                        <handless:BorderlessEntry VerticalOptions="Center" Placeholder="Email" Grid.Column="1" Keyboard="Email" TextColor="Black"/>
                     </Grid>
                 </Frame>
 
                 <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
                     <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
                         <Image VerticalOptions="Center" Source="password.png" HeightRequest="25" WidthRequest="25" />
-                        <handless:BorderlessEntry VerticalOptions="Center" Placeholder="Password" IsPassword="True" Grid.Column="1" />
+                        <handless:BorderlessEntry VerticalOptions="Center" Placeholder="Password" IsPassword="True" Grid.Column="1" TextColor="Black" />
                     </Grid>
                 </Frame>
 
